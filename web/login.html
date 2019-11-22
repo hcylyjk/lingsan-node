@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>灵山登录窗口</title>
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../node_modules/swiper/css/swiper.css">
+    <link rel="stylesheet" type="text/css" href="../css/login.css">
+</head>
+
+<body style="overflow-x:hidden">
+    <div class="swiper-containers">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-bg1"></div>                  
+            <div class="swiper-slide swiper-bg2"></div>
+            <div class="swiper-slide swiper-bg3"></div>
+        </div>
+    </div>
+    <div class="h-login">
+        <div class="h-title">
+            欢迎使用灵山景区电商系统<br>请选择您的身份进行登录
+        </div>
+        <div class="h-btn">
+            <div class="fl h-platform">
+                <p class="platform-Administrator"> 平台管理员登录</p>
+                <div class="login-platform login">
+                    <div class="platform-title">
+                        <h3 class="fl plat-h3">平台管理员登录</h3>
+                        <span class="platform-error">×</span>
+                    </div>
+                    <form>
+                        账户名：<input type="text" id="userName" class="input-height">
+                        <br>
+                        密&nbsp;&nbsp;&nbsp;码：<input type="text" id="pass" class="input-height">
+                        <br>
+                        <div>
+                            <input type="checkbox">
+                            <span>记住密码</span>
+                            <span class="forget">忘记密码？</span>
+                        </div>
+
+                        <button class="plat-bt">登录</button>
+                    </form>
+                </div>
+            </div>
+            <div class="fr h-platform">
+                <p class="platform-merchant">商家登录</p>
+                <div class="login login-customer">
+                    <div class="platform-title">
+                        <h3 class="fl h-plat-h3">商家登录</h3>
+                        <span class="h-platform-error">×</span>
+                    </div>
+                    <form>
+                        账户名：<input type="text" id="userName" class="input-height">
+                        <br>
+                        密&nbsp;&nbsp;&nbsp;码：<input type="text" id="pass" class="input-height">
+                        <br>
+                        <div>
+                            <input type="checkbox">
+                            <span>记住密码</span>
+                            <span class="forget">忘记密码？</span>
+                        </div>
+                        <button class="plat-bt">登录</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/jquery.js"></script>
+    <script src="../node_modules/swiper/js/swiper.js"></script>
+    <script src="../js/login.js"></script>
+</body>
+
+</html>

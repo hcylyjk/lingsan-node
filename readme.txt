@@ -1,0 +1,1 @@
+﻿1.用到vue以及axios,swiper,vue，基于nodeJs为后台语言，以express为框架，用到了gulp
