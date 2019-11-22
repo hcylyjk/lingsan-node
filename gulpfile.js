@@ -11,15 +11,15 @@ const plugin = require('gulp-load-plugins')();//自动加载
 //login
 
 task('getImg',function(){
-    return src('./images/*.*')
-    .pipe(dest('./dist/images'))
+    return src('./public/images/*.*')
+    .pipe(dest('./dist/public/images'))
     .pipe(connect.reload())
 })
 //html
 task('getHtml',function(){
     return src('./web/*.html')
    
-    .pipe(dest('./dist'))
+    .pipe(dest('./dist/web'))
      .pipe(connect.reload())
     
 });
@@ -28,25 +28,25 @@ task('transformSass',function(){
     return src('./scss/*.scss')
     .pipe(sass())
   
-    .pipe(dest('./css'))
+    .pipe(dest('./public/css'))
     
      .pipe(connect.reload())
 });
 
 //压缩js
 task('uglify',function(){
-    return src('./js/*.js')
+    return src('./public/js/*.js')
     .pipe(uglify())
   
-    .pipe(dest('./dist/js'))
+    .pipe(dest('./dist/public/js'))
      .pipe(connect.reload())
    
 });
 //压缩css
 task('minifyCss',function(){
-    return src('./css/*.css')
+    return src('./public/css/*.css')
     .pipe(minifyCss())
-    .pipe(dest('./dist/css'))
+    .pipe(dest('./dist/public/css'))
     .pipe(connect.reload())
 })
 
@@ -61,9 +61,9 @@ task('reload',function(done){
 task('watch',function(){
     watch('./web/*.html',series('getHtml'));
     watch('./scss/*.scss',series('transformSass'));
-    watch('./js/*.js',series('uglify'));
-    watch('./css/*.css',series('minifyCss'));
-    watch('./images/*.*',series('getImg'))
+    watch('./public/js/*.js',series('uglify'));
+    watch('./public/css/*.css',series('minifyCss'));
+    watch('./public/images/*.*',series('getImg'))
 })
 
 exports.run = series('reload','watch');
