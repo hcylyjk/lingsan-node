@@ -33,7 +33,7 @@ router.post('/platformLogin',async(req,res)=>{
     }else{
         res.send({
             code:"1",
-            mag:"登录失败",
+            mag:"×账号或密码错误",
         })
     }
     //res.send('ok')

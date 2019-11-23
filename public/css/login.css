@@ -107,9 +107,16 @@
   height: 28px;
   font-size: 16px;
   letter-spacing: 5px;
-  text-indent: 9px;
-  margin-top: 20px; }
+  text-indent: 9px; }
 
 .platform-title {
   margin-bottom: 12px;
   margin-top: 7px; }
+
+.h-error {
+  line-height: 31px;
+  padding: 0 0 0 139px;
+  color: #ec0808;
+  text-align: center;
+  font-size: 14px;
+  width: 119px; }

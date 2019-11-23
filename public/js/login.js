@@ -36,3 +36,18 @@ $(function(){
     })
 });
 
+
+//先判断再ajax请求
+$(function(){
+    $('#btn-platform').on('click',function(){
+        //用户名：只能包括数字字母的组合，长度为2-6位
+        // var name = /^[A-Za-z][A-Za-z0-9]{2,6}$/;
+        // var pass = /^[a-zA-Z0-9]{2,20}$/;
+        // var boo1 = name.test($('#userName').val())
+        // var boo2 = pass.test($('#password').val())
+        // console.log(boo1);
+        
+
+    })
+})
+
