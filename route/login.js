@@ -6,7 +6,7 @@ const router = express.Router()
 const platformUser = require('../models/platformUser')
 
 //平台端登录
-router.post('/platformLogin',async(req,res)=>{
+router.post('/platformLogin', async (req, res) => {
     // console.log(req.body);
     // const user = new platformUser({
     //     username: req.body.username,
@@ -17,23 +17,23 @@ router.post('/platformLogin',async(req,res)=>{
     let password = req.body.password
     //console.log(username,password)
     let isOk = false
-    let user = await platformUser.findOne({username})
-    if(user){
-        isOk = await bcryptjs.compare(password,user.password)
+    let user = await platformUser.findOne({ username })
+    if (user) {
+        isOk = await bcryptjs.compare(password, user.password)
     }
-    if(isOk){
+    if (isOk) {
         res.send({
-            code:"0",
+            code: "0",
             msg: "登录成功",
-            data:{
-                _id:user._id,
-                username:username,
+            data: {
+                _id: user._id,
+                username: username,
             }
         })
-    }else{
+    } else {
         res.send({
-            code:"1",
-            mag:"×账号或密码错误",
+            code: "1",
+            msg: "×账号或密码错误",
         })
     }
     //res.send('ok')

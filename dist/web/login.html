@@ -31,20 +31,20 @@
                         <h3 class="fl plat-h3">平台管理员登录</h3>
                         <span class="platform-error">×</span>
                     </div>
-                    <form target="stop">
+                   
                         账户名：<input type="text" id="userName" class="input-height" name="username">
                         <br>
-                        密&nbsp;&nbsp;&nbsp;码：<input type="text" id="password" class="input-height" name="password">
+                        密&nbsp;&nbsp;&nbsp;码：<input type="password" id="password" class="input-height" name="password">
                         <br>
                         <div>
-                            <input type="checkbox">
+                            <input type="checkbox" id="platform-check">
                             <span>记住我</span>
                             <span class="forget">忘记密码？</span>
                         </div>
                         <button class="plat-bt" id="btn-platform">登录</button>
-                        <p class="h-error"></p>
-                    </form>
-                    <iframe name="stop" style="display:none"></iframe>
+                        <p class="h-error" id="platform-err"></p>
+                   
+                    <!-- <iframe name="stop" style="display:none"></iframe> -->
                 </div>
             </div>
             <div class="fr h-platform">
@@ -54,10 +54,10 @@
                         <h3 class="fl h-plat-h3">商家登录</h3>
                         <span class="h-platform-error">×</span>
                     </div>
-                    <form target="stop1">
+                    <form>
                         账户名：<input type="text" id="user" class="input-height" name="username">
                         <br>
-                        密&nbsp;&nbsp;&nbsp;码：<input type="text" id="pass" class="input-height" name="password">
+                        密&nbsp;&nbsp;&nbsp;码：<input type="password" id="pass" class="input-height" name="password">
                         <br>
                         <div>
                             <input type="checkbox">
@@ -67,13 +67,16 @@
                         <button class="plat-bt">登录</button>
                         <p class="h-error"></p>
                     </form>
-                    <iframe name="stop1" style="display:none"></iframe>
+                    <!-- <iframe name="stop1" style="display:none"></iframe> -->
                 </div>
             </div>
         </div>
     </div>
     <script src="../public/js/jquery.js"></script>
+    <script src="../public/js/jquery.base64.js"></script>
     <script src="../node_modules/swiper/js/swiper.js"></script>
+    <script src="../node_modules/axios/dist/axios.min.js"></script>
+    <script src="../public/commonJs/cookie.js"></script>
     <script src="../public/js/login.js"></script>
 </body>
 

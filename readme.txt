@@ -8,3 +8,4 @@
 8. npm install -g nodemon           Node自动重启工具
 9.conf  存放数据库
 10.models  存放数据表
+11.$.base64 加密
