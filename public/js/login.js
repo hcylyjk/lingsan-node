@@ -70,8 +70,8 @@ $(function () {
             username: $('#userName').val(),
             password: $('#password').val()
         }).then(res => {
-            if (res.data.code === '0') {
-                console.log('666')
+            if (res.data.data.key === 'primaryAccout') {
+                window.location.href="../../web/index-main.html"
                 return false
             }
             if (res.data.code === '1') {

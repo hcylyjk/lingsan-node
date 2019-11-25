@@ -28,6 +28,7 @@ router.post('/platformLogin', async (req, res) => {
             data: {
                 _id: user._id,
                 username: username,
+                key:user.key
             }
         })
     } else {

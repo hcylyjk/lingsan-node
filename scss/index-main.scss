@@ -2,6 +2,7 @@
 
 #hcy-server{
     height:100%;
+    width:100%;
     position: relative;
     font-size:'Microsoft yahei';
     font-size:13px;
@@ -14,7 +15,21 @@
     left:0;
     height:70px;
     background-color:rgb(41,161,118);
-    padding:0 30px;
-    line-height:70px;
     width:100%;
+   
+}
+.header-left{
+    height:70px;
+    line-height:70px;
+    padding:0 40px;
+    .header-text{
+        color:#f5f3f3;
+        font-size: 20px;
+        font-weight: 500px;
+        letter-spacing: 1px;
+    }
+    .header-icon1{
+        cursor: pointer;
+        height:70px;
+    }
 }
